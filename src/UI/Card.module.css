@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 60%;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px black;
+  padding: 1rem;
+  background-color: #091357;
+}
+
+@media only screen and (max-width: 720px) {
+  .card {
+
+    width: 90%;
+  }
+}

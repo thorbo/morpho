@@ -1,0 +1,62 @@
+.exercise-list {
+  color: rgb(195, 203, 207);
+  text-align: center;
+}
+
+.exercise-list header {
+  color: #b1a76d;
+  font-size: 1.5rem;
+}
+
+.exercise-list ul {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.exercise-list li {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0.5rem;
+  padding: 0 20%;
+}
+
+.exercise-list li > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-list span {
+  font-size: 0.75rem;
+}
+
+.exercise-list .name {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.exercise-list button {
+  border: solid 1px rgb(195, 203, 207);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 12px;
+  color: rgb(195, 203, 207);
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+
+.exercise-list .active,
+.exercise-list button:hover {
+  background-color: #8c1703;
+  color: black;
+  border-color: black;
+}
+
+@media only screen and (max-width: 720px) {
+  .exercise-list li {
+    padding: 10px;
+  }
+}

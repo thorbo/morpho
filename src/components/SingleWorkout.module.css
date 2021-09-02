@@ -1,0 +1,155 @@
+.workout {
+  display: flex;
+  color: rgb(195, 203, 207);
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.workout div {
+  display: flex;
+  align-items: center;
+}
+
+.workout svg {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border: 2px solid #b1a76d;
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  fill: rgb(195, 203, 207);
+  align-items: center;
+  z-index: 1000;
+}
+
+.workout svg:hover {
+  background-color: #8c1703;
+  fill: black;
+}
+
+.exercise {
+  font-size: 1.5rem;
+  width: 100%;
+  color: rgb(195, 203, 207);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.set {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(195, 203, 207);
+  padding: 1rem 1rem 0.25rem;
+}
+
+.set > div {
+  display: flex;
+  align-items: center;
+}
+
+.set button {
+  margin-right: 0.5rem;
+  border: 2px solid #b1a76d;
+  background-color: transparent;
+  color: rgb(195, 203, 207);
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.button {
+  width: max-content;
+  margin: 1rem auto;
+  display: inline;
+  border: 1px solid rgb(195, 203, 207);
+  background-color: transparent;
+  color: rgb(195, 203, 207);
+  padding: 0.5rem;
+  border-radius: 15px;
+  height: 5rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.set button:hover,
+.button:hover {
+  background-color: #8c1703;
+  color: black;
+}
+
+.value {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid #b1a76d;
+  padding: 0.5rem;
+  border-radius: 20%;
+  margin-right: 0.5rem;
+}
+
+.value span {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(184, 184, 184, 0.863);
+}
+
+.value input {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: rgb(195, 203, 207);
+  text-align: center;
+  width: auto;
+}
+
+.value .title {
+  font-size: 0.75rem;
+  color: rgba(184, 184, 184, 0.863);
+}
+
+.plates {
+  color: rgb(195, 203, 207);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgb(195, 203, 207);
+}
+@media only screen and (max-width: 720px) {
+  .workout {
+    font-size: 1.25rem;
+    margin: -0.25rem;
+  }
+
+  .workout svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .value {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+    margin-right: 0.25rem;
+  }
+  .value input {
+    font-size: 1rem;
+  }
+
+  .set button {
+    margin-right: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}

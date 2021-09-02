@@ -1,0 +1,94 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.7);
+  z-index: 10;
+}
+
+.cart {
+  position: fixed;
+  z-index: 100;
+  left: 25%;
+  width: 50%;
+  height: 80vh;
+  overflow: hidden;
+  color: rgb(195, 203, 207);
+}
+
+.cart-items {
+  height: 85%;
+  overflow: auto;
+}
+
+.cart-item {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item h3 {
+  font-style: italic;
+}
+
+.cart-item * {
+  margin-right: 1rem;
+}
+
+.cart-item div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cart button {
+  border: solid 1px rgb(195, 203, 207);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 12px;
+  color: rgb(195, 203, 207);
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+
+.cart button:hover {
+  background-color: #8c1703;
+  color: black;
+  border-color: black;
+}
+
+.cart-actions {
+  border-top: 2px solid rgb(195, 203, 207);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.cart-actions button {
+  height: auto;
+  width: auto;
+}
+
+@media only screen and (max-width: 720px) {
+  .cart {
+    left: 5%;
+    width: 90%;
+  }
+
+  .cart-item {
+    margin: 0.5rem;
+  }
+
+  .cart-item h3 {
+    font-size: 1rem;
+  }
+  
+  .cart-item * {
+    margin-right: 0.5rem;
+  }
+}

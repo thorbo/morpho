@@ -1,0 +1,86 @@
+.cart {
+  background-color: #0268ae;
+  height: 5rem;
+  color: rgb(195, 203, 207);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cart input {
+  border: 2px solid rgb(195, 203, 207);
+  font-size: 1.5rem;
+  border-radius: 12px;
+  width: auto;
+}
+
+.cart button {
+  border: 1px solid rgb(195, 203, 207);
+  background-color: transparent;
+  color: inherit;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #8c1703;
+  color: black;
+  border-color: black;
+}
+
+.cart > div {
+  flex-direction: column;
+  border: 1px solid rgb(195, 203, 207);
+  padding: 0.5rem;
+  border-radius: 12px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.cart > div > div {
+  font-size: 1.5rem;
+}
+
+.error {
+  text-align: center;
+  color: rgb(195, 203, 207);
+}
+
+@media only screen and (max-width: 720px) {
+  .cart {
+    gap: 0.25rem;
+    justify-content: center;
+    padding: 0 0.25rem;
+  }
+
+  .cart input {
+    font-size: 0.75rem;
+    width: 160px;
+  }
+
+  .cart span {
+    font-size: 0.75rem;
+  }
+
+  .cart > div {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .cart > div > div {
+    font-size: 1rem;
+  }
+
+.cart button {
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  width: min-content;
+}
+}

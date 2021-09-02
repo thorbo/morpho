@@ -1,0 +1,61 @@
+.timer {
+  width: max-content;
+}
+
+.configs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.configs > div {
+  text-align: center;
+}
+
+.configs button {
+  background-color: transparent;
+  color: rgb(195, 203, 207);
+  border: 1px solid rgb(195, 203, 207);
+  border-radius: 12px;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.configs button:hover {
+  background-color: #8c1703;
+  border-color: black;
+  color: black;
+  cursor: pointer;
+}
+
+.configs input {
+  max-width: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.clock {
+  background-color: black;
+  color: #0fd6e6;
+  border: 1px solid rgb(195, 203, 207);
+  font-size: 4rem;
+  padding: 1rem;
+  text-align: center;
+  width: max-content;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 720px) {
+.timer {
+  width: 90%;
+}
+
+.configs button {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+
+}

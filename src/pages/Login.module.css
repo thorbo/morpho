@@ -1,0 +1,44 @@
+.login {
+  padding: 1rem;
+  width: max-content;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  border: 2px solid rgb(195, 203, 207);
+  border-radius: 12px;
+  font-size: 1.25rem;
+}
+
+label {
+  color: rgb(195, 203, 207);
+  font-size: 1rem;
+}
+
+.login button {
+  border: 1px solid rgb(195, 203, 207);
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: transparent;
+  color: rgb(195, 203, 207);
+  font-size: 1rem;
+}
+
+.login button:hover {
+  cursor: pointer;
+  background-color: #8c1703;
+}
+
+@media only screen and (max-width: 720px) {
+input {
+  width: 200px;
+  font-size: 1rem;
+}
+}
