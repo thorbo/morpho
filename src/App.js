@@ -39,7 +39,7 @@ function App() {
 
   // Send latest loaded workouts to DB
   useEffect(() => {
-    if (!initialLoad && loadedWorkouts) {
+    if (!initialLoad && loadedWorkouts.length !== 0) {
       dispatch(sendWorkoutData(loadedWorkouts, email));
     }
   }, [loadedWorkouts, initialLoad, dispatch, email]);

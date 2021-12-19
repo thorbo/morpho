@@ -40,6 +40,7 @@ const LogBook = () => {
     if (isGroupMode) {
       // order log book by group
       return logBook.reduce((acc, log) => {
+        console.log(log.exerciseId)
         const group = exercises.find(
           (exercise) => exercise.exerciseId === log.exerciseId
         ).group;

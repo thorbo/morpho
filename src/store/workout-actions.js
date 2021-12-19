@@ -136,8 +136,12 @@ export const fetchLogBookData = (email) => {
         throw new Error(response.statusText);
       }
 
-      const data = await response.json();
-      return data || [];
+      let data = await response.json() || [];
+      if (data.length > 0) {
+        data = data.filter(log => log !== null)
+      }
+      console.log(data)
+      return data;
     };
 
     try {

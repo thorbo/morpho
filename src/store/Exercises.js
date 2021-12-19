@@ -1,20 +1,32 @@
 export const exercises = [
   { exerciseId: "Pushups", group: "Chest", equipment: "None" },
   { exerciseId: "Bench Press", group: "Chest", equipment: "Barbell" },
-  { exerciseId: "Dumbbell Bench Press", group: "Chest", equipment: "Dumbbell" },
+  { exerciseId: "Bench Press (D)", group: "Chest", equipment: "Dumbbell" },
   { exerciseId: "Chest Fly", group: "Chest", equipment: "Dumbbell" },
   { exerciseId: "Pullover", group: "Chest", equipment: "Barbell" },
   { exerciseId: "Incline Bench Press", group: "Chest", equipment: "Barbell" },
+  {
+    exerciseId: "Incline Bench Press (D)",
+    group: "Chest",
+    equipment: "Dumbbell",
+  },
   { exerciseId: "Decline Bench Press", group: "Chest", equipment: "Barbell" },
+  {
+    exerciseId: "Decline Bench Press (D)",
+    group: "Chest",
+    equipment: "Dumbbell",
+  },
 
   { exerciseId: "Pullups", group: "Back", equipment: "None" },
   { exerciseId: "Lat Pulldown", group: "Back", equipment: "Machine" },
   { exerciseId: "Bent-Over Row", group: "Back", equipment: "Barbell" },
+  { exerciseId: "Bent-Over Row (D)", group: "Back", equipment: "Dumbbell" },
   { exerciseId: "Back Extension", group: "Back", equipment: "Machine" },
   { exerciseId: "Seated Cable Row", group: "Back", equipment: "Machine" },
   { exerciseId: "Good-Morning", group: "Back", equipment: "Machine" },
   { exerciseId: "Shrugs", group: "Back", equipment: "Machine" },
 
+  { exerciseId: "Barbell Curls", group: "Biceps", equipment: "Barbell" },
   { exerciseId: "Dumbbell Curls", group: "Biceps", equipment: "Dumbbell" },
   { exerciseId: "Preacher Curls", group: "Biceps", equipment: "Barbell" },
   { exerciseId: "Hammer Curls", group: "Biceps", equipment: "Barbell" },
@@ -68,6 +80,7 @@ export const exercises = [
   { exerciseId: "Seated Calf Raise", group: "Legs", equipment: "Machine" },
   { exerciseId: "Lunges", group: "Legs", equipment: "Dumbbell" },
   { exerciseId: "Step-Ups", group: "Legs", equipment: "Rack" },
+  { exerciseId: "Romanian Deadlift", group: "Legs", equipment: "Barbell" },
 
   { exerciseId: "Deadlift", group: "Compound", equipment: "Barbell" },
   {
@@ -75,5 +88,5 @@ export const exercises = [
     group: "Compound",
     equipment: "Barbell",
   },
-  { exerciseId: "Dips", group: "Compound", equipment: "Barbell" },
+  { exerciseId: "Dips", group: "Compound", equipment: "None" },
 ];
